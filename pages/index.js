@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Header from '../components/header'
 import MainSection from '../components/main'
 import styles from '../styles/Home.module.css'
+import utilStyles from '../styles/utils.module.css';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <Header />
       </header>
 
-      <main className='w-[100vw]'>
+      <main className={`overflow-hidden w-[100vw] ${utilStyles.mainBg}`}>
         <MainSection />
       </main>
 

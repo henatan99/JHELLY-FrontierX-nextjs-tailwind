@@ -23,6 +23,24 @@
     background: linear-gradient(95.91deg, #665AEF 6.04%, #FC364C 88.42%);
 }
 
+.mainBg {
+    background: linear-gradient(15.74deg, rgba(46, 45, 102, 0.6) -2.5%, rgba(58, 39, 63, 0.6) 47.55%, #181818 90.7%);
+   /*  transform: rotate(-180deg); */
+}
+
+.subHeaderBg {
+    background: url('/subHeaderMaskImg.svg'), url('/ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.caroselBg {
+    background: rgba(13, 13, 13, 0.5);
+}
+
+.caroselDarkBg {
+    background: #0D0D0D;
+}
 /* text colors */
 
 .light1 {
@@ -47,3 +65,5 @@
     font-size: 0.9375rem;
     line-height: 1.25rem;
 }
+
+/* Media queries */
