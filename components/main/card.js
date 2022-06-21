@@ -23,10 +23,10 @@ const CardsHolder = () => {
     ]
 
     return (
-        <ul className="list-none flex flex-wrap mb-[2.375rem]">
+        <ul className="list-none flex flex-wrap mb-[2.375rem] text-[13px]">
             {
                 cards.map(card => {
-                    return <li key={card.ind} className="w-[30.76%] p-[0.9375rem 1.625rem] bg-[#0D0D0D] mr-[1.56%] mb-[0.625rem]"><Card
+                    return <li key={card.ind} className="w-[30.76%] pt-[0.9375rem] pb-[0.9375rem] pl-[1.625rem] pr-[1.625rem] bg-[#0D0D0D] mr-[1.56%] mb-[0.625rem]"><Card
                         description={card.description}
                         title={card.title}
                         percent={card.percent}
