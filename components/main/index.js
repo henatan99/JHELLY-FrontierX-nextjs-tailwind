@@ -1,5 +1,6 @@
 import utilStyles from '../../styles/utils.module.css';
 import Accordion from './acordion';
+import Article from './article';
 import CardsHolder from './card';
 
 const MainSection = () => {
@@ -29,9 +30,11 @@ const MainSection = () => {
                 })
                }     
             </ul>
-            <div className='grid grid-cols-2 gap-[1.32%] mt-[4.5625rem]'>
-                <div className='w-full md:w-[82.1%] ml-auto mr-0'>
-                    <Accordion></Accordion>
+            <div className='lg:grid grid-cols-2 gap-[1.32%] mt-[4.5625rem]'>
+                <div className='w-full md:w-[82.1%] lg:ml-auto lg:mr-0'>
+                    <Accordion>
+                        <Article />
+                    </Accordion>
                 </div>
                 <div className='w-full md:w-[82.1%]'>
                     <Accordion>

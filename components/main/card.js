@@ -23,7 +23,7 @@ const CardsHolder = () => {
     ]
 
     return (
-        <ul className="list-none flex flex-wrap">
+        <ul className="list-none flex flex-wrap mb-[2.375rem]">
             {
                 cards.map(card => {
                     return <li key={card.ind} className="w-[30.76%] p-[0.9375rem 1.625rem] bg-[#0D0D0D] mr-[1.56%] mb-[0.625rem]"><Card
