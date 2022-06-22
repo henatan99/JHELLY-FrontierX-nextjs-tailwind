@@ -11,7 +11,7 @@ const MainSection = () => {
     ]
     return (
         <>  
-            <div className='invisible relative flex flex-column items-center justify-center md:visible h-[25rem] mt-[-1.25rem] z-[10]'>
+            <div className='relative flex flex-column items-center justify-center h-[25rem] mt-[-1.25rem] z-[10]'>
                 <div className={`absolute flex flex-column items-center justify-center min-w-[1750px] h-[25rem] ${utilStyles.subHeaderBg}`}>
                     {/* <img src="/subHeaderMaskImg.svg" className="w-full h-[16.625rem]"/> */}
                 </div>
