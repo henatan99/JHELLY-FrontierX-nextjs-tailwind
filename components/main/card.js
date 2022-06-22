@@ -28,7 +28,7 @@ const CardsHolder = () => {
     ]
 
     return (
-        <ul className="list-none flex flex-wrap mb-[2.375rem] text-[13px]">
+        <ul className="list-none flex flex-wrap mb-[2.375rem] text-[13px] h-[19.8125rem] overflow-y-scroll">
             {
                 cards.map(card => {
                     return <li key={card.ind} className="w-[30.76%] pt-[0.9375rem] pb-[0.9375rem] pl-[1.55rem] pr-[1.55rem] bg-[#0D0D0D] mr-[1.56%] mb-[0.625rem]"><Card

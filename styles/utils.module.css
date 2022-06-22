@@ -25,16 +25,30 @@
 
 .mainBg {
     background: linear-gradient(15.74deg, rgba(46, 45, 102, 0.6) -2.5%, rgba(58, 39, 63, 0.6) 47.55%, #181818 90.7%);
-   /*  transform: rotate(-180deg); */
+    /* transform: rotate(-180deg); */
 }
 
 .subHeaderBg {
-    background: url('/subHeaderMaskImg.svg'), url('/ellipse.svg');
+    background: url('/subHeaderMaskImg.svg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 16.625rem;
     position:absolute;
     left:50%;
     transform:translateX(-50%);
+    animation-name: animate_bg;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes animate_bg {
+    from {
+      transform: translateX(0);
+    }
+    to { 
+      transform: translateX(-36%);
+    }
 }
 
 .caroselBg {
@@ -77,8 +91,8 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 45px;
-    line-height: 61px;
+    font-size: 2.8125rem; /* 45px */
+    line-height: 3.8125rem;   /* 61px */
     text-align: center;
     color: #FFFFFF;
 }
@@ -87,8 +101,8 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 0.8125rem;    /* 13px */
+    line-height: 1.125rem;     /* 18px */
     color: #A2A2A2;
 }
 
@@ -96,16 +110,16 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.9375rem;    /* 15px */
+    line-height: 1.25rem;    /* 20px */
 }
 
 .font_16_20 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;    /* 16px */
+    line-height: 1.25rem;   /* 20px */
     /* or 125% */
     text-align: center;
     color: #F3F3F3;
@@ -115,8 +129,8 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;    /* 16px */
+    line-height: 1.375rem;   /* 22px */
     text-align: center;
     color: #FFFFFF;
 }
@@ -125,8 +139,8 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1rem;  /* 16px */
+    line-height: 1.375rem;    /* 22px */
     /* identical to box height */
     color: #FFFFFF;
 }
@@ -135,16 +149,18 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 0.875rem;   
+    /* 14px */
+    line-height: 1.1875rem;   
+    /* 19px */
 }
 
 .font_13_23 {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
-    line-height: 23px;
+    font-size: 0.8125rem;   /* 13px */
+    line-height: 1.4375rem;   /* 23px */
     /* or 177% */
     text-align: center;
     color: #8E8B8F;

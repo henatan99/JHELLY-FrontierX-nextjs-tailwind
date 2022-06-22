@@ -4,7 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html, */
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 11.377px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 6px;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
