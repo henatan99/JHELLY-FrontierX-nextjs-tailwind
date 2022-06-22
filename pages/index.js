@@ -21,7 +21,8 @@ export default function Home() {
         <Header />
       </header>
 
-      <main className={`overflow-hidden w-[100vw] ${utilStyles.mainBg}`}>
+      <main className={`relative overflow-hidden w-[100vw] z-50`}>
+        <div className={`absolute top-0 left-0 w-full h-full ${utilStyles.mainBg} -z-10`}></div>
         <MainSection />
       </main>
 
