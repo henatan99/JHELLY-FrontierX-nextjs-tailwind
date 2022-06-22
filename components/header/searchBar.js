@@ -27,7 +27,7 @@ const SearchBar = () => {
                 <input
                     type="text"
                     placeholder="Lorem Ipsum"
-                    className={`block bg-inherit absolute left-[3.56rem] lg:top-[0.9rem] w-[15.1875rem] h-[1.012rem] ${utilStyles.searchTextColor} focus:outline-none `}
+                    className={`block bg-inherit absolute left-[3.56rem] lg:top-[0.9rem] w-[15.1875rem] h-[1.012rem] ${utilStyles.font_13_18} focus:outline-none `}
                 />
             </div>
         </div>

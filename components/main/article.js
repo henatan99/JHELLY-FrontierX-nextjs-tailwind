@@ -1,3 +1,5 @@
+import utilStyles from '../../styles/utils.module.css';
+
 const Article = () => {
     const links = [
         {ind: 1, url: '/diagArrowIcon.svg', text: 'Lorem ipsum.com'},
@@ -7,13 +9,13 @@ const Article = () => {
     ]
     return (
         <div className="text-[#8E8B8F] w-[87.8%] pb-[2.06rem]">
-            <p className="mb-[2.625rem]">
+            <p className={`mb-[2.625rem] ${utilStyles.font_14_19} text-[#FFFFFF]`}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
             in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
-            <ul className="text-sm flex flex-wrap">
+            <ul className={`text-sm flex flex-wrap ${utilStyles.font_14_19} text-[#FFFFFF]`}>
                 {
                     links.map(link => {
                         return<li key={link.ind} className="flex flex-row h-[1.5rem] mb-[1.25rem]">

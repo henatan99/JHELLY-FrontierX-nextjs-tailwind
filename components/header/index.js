@@ -12,7 +12,7 @@ const Header = () => {
             <SearchBar />
             <ul className={`flex flex-row justify-between absolute right-[2.9%] left-[50%] md:left-[60%] lg:left-[81%] top-[0.5rem] lg:top-[2.375rem] ${utilStyles.psText}`}>
                 {list && list.map((item) => {
-                    return <li className={`${utilStyles.whity}`} key={item.ind}>{item.text}</li>
+                    return <li className={`${utilStyles.font_15_20} text-[#FFFFFF]`} key={item.ind}>{item.text}</li>
                 })}
             </ul>
             <span className={`block w-full h-[6px] absolute bottom-[-3px] ${utilStyles.headerBar}`} />

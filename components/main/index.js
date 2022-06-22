@@ -16,11 +16,11 @@ const MainSection = () => {
                 <img src="/ellipse.svg" className="absolute bottom-[0.8125rem]" /> */}
             </div>
             <div className='text-center mt-[0.8125rem] mb-[3.75rem]'>
-                <h1 className='h-[3.8125rem] mb-[0.375rem]'>Lorem Ipsum</h1>
-                <p className='h-[2.5rem]'>Created by Lorem Ipsum</p>
-                <p className='h-[2rem]'>sed ut percpiciates unde omnis uste natus error sit voluptatem</p>
+                <h1 className={`h-[3.8125rem] mb-[0.375rem] ${utilStyles.fontTitle}`}>Lorem Ipsum</h1>
+                <p className={`h-[2.5rem] ${utilStyles.font_16_20}`}>Created by Lorem Ipsum</p>
+                <p className={`h-[2rem] ${utilStyles.font_16_400}`}>sed ut percpiciates unde omnis uste natus error sit voluptatem</p>
             </div>
-            <ul className='flex flex-row justify-center'>
+            <ul className={`flex flex-row justify-center ${utilStyles.font_15_20} text-[#F7F7F7]`}>
                {
                 caroselList.map(carosel => {
                     return <li className={`flex flex-row w-[12.78%] h-[3.125rem] ml-[0.625rem] mr-[0.625rem] rounded-[5px] ${utilStyles.caroselBg}`}>

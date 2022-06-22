@@ -70,4 +70,81 @@
     line-height: 1.25rem;
 }
 
+.fontTitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.font_13_18 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #A2A2A2;
+}
+
+.font_15_20 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.font_16_20 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    text-align: center;
+    color: #F3F3F3;
+}
+
+.font_16_400 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.font_16_800 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.font_14_19 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.font_13_23 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    /* or 177% */
+    text-align: center;
+    color: #8E8B8F;
+}
+
 /* Media queries */
