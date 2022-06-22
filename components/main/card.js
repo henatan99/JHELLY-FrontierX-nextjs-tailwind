@@ -21,7 +21,10 @@ const CardsHolder = () => {
         {ind: 6, description: 'Legs & Clothes', title: 'Lorem Ipsum', percent: '2%'},
         {ind: 7, description: 'Glasses', title: 'Lorem Ipsum', percent: '3%'},
         {ind: 8, description: 'Head', title: 'Lorem Ipsum', percent: '92%'},
-        {ind: 9, description: 'Legs & Clothes', title: 'Lorem Ipsum', percent: '2%'}
+        {ind: 9, description: 'Legs & Clothes', title: 'Lorem Ipsum', percent: '2%'},
+        {ind: 7, description: 'Glasses', title: 'Lorem Ipsum', percent: '3%'},
+        {ind: 8, description: 'Head', title: 'Lorem Ipsum', percent: '92%'},
+        {ind: 9, description: 'Legs & Clothes', title: 'Lorem Ipsum', percent: '2%'},
     ]
 
     return (

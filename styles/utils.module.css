@@ -32,6 +32,9 @@
     background: url('/subHeaderMaskImg.svg'), url('/ellipse.svg');
     background-repeat: no-repeat;
     background-position: center;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
 }
 
 .caroselBg {
