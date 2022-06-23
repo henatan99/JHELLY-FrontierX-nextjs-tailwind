@@ -3,7 +3,7 @@ import utilStyles from '../../styles/utils.module.css';
 const Card = (props) => {
     const { description, title, percent } = props;
     return (
-            <div className={`${utilStyles.font_13_23} text-center`}>
+            <div className={`${utilStyles.font_13_23} text-center hover:border-[#FC364C 1px solid]`}>
                 <p>{description}</p>
                 <h1 className={`${utilStyles.font_16_800}`}>{title}</h1>
                 <p>{percent}</p>
@@ -28,7 +28,7 @@ const CardsHolder = () => {
     ]
 
     return (
-        <ul className="list-none flex flex-wrap mb-[2.375rem] text-[13px] h-[19.8125rem] overflow-y-scroll">
+        <ul className={`list-none flex flex-wrap mb-[2.375rem] text-[13px] h-[19.8125rem] overflow-y-scroll ${utilStyles.scrolable} ${utilStyles.card}`}>
             {
                 cards.map(card => {
                     return <li key={card.ind} className="w-[30.76%] pt-[0.9375rem] pb-[0.9375rem] pl-[1.55rem] pr-[1.55rem] bg-[#0D0D0D] mr-[1.56%] mb-[0.625rem]"><Card

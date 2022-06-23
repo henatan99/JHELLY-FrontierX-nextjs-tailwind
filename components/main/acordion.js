@@ -5,7 +5,7 @@ const Accordion = (props) => {
     const { children, spacings } = props;
     const [show, setShow] = useState(false);
     return (
-        <div className={`w-full h-fit-content max-h-[27.375rem] rounded-[4px] pl-[1.838rem] pr-[1.577rem] mb-[1.5rem] ${show && spacings} ${utilStyles.accordionBg}`}>
+        <div className={`w-full h-fit-content max-h-[27.375rem] rounded-[4px] pl-[1.838rem] pr-[1.5rem] mb-[1.5rem] ${show && spacings} ${utilStyles.accordionBg}`}>
             <div className={`flex flex-row h-[4.75rem]`}>
                 <img src='/fourCirclesIcon.svg' className='w-[0.9375rem]' />
                 <h2 className={`flex items-center ml-[0.61rem] ${utilStyles.font_16_800}`}>Lorem Ipsum</h2>

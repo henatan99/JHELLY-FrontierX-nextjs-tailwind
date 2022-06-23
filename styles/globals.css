@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 /* html, */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   html {
     font-size: 11.377px;
   }
@@ -13,7 +13,13 @@
 
 @media only screen and (max-width: 425px) {
   html {
-    font-size: 6px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 8px;
   }
 }
 
@@ -31,25 +37,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  height: 316px;
-  /* height: 316px; */
-  border: 1px solid rgba(86, 86, 86, 0.5);
-  transform: rotate(-180deg);
-}
-
-::-webkit-scrollbar-track {
-
-}
-
-::-webkit-scrollbar-thumb {
-  width: 91px;
-  height: 6px;
-  background: #1c1c1c;
-  border: 1px solid #565656;
-  border-radius: 100px;
-  /* transform: rotate(90deg) */
 }
