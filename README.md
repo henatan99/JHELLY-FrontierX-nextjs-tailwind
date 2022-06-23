@@ -8,11 +8,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### Medium screen view
 
-![Screenshot](docs/lg.gif)
+![Screenshot](docs/md.gif)
 
 ### Small screen view
 
-![Screenshot](docs/lg.gif)
+![Screenshot](docs/sm.gif)
 
 
 ### Prerequisites
