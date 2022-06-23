@@ -1,17 +1,6 @@
 /* colors */
 
 /* background */
-.blackBg {
-    background: #0D0D0D
-}
-
-.lightBlackBg {
-    background: rgba(13, 13, 13, 0.5);
-}
-
-.smallIconsBg {
-    background: #F3F3F3;
-}
 
 .searchBg {
     background: #1F1F1F;
@@ -51,30 +40,6 @@
     }
 }
 
-.caroselBg {
-    background: rgba(13, 13, 13, 0.5);
-}
-
-.caroselDarkBg {
-    background: #0D0D0D;
-}
-/* text colors */
-
-.light1 {
-    color: #F7F7F7;
-}
-
-.whity {
-    color: #FFFFFF;
-}
-
-.searchTextColor {
-    color: #A2A2A2;
-}
-
-.accordionBg {
-    background: rgba(13, 13, 13, 0.5);
-}
 
 /*  Typography   */
 
@@ -181,10 +146,4 @@ ul.scrolable::-webkit-scrollbar-thumb {
   border: 1px solid #565656;
   border-radius: 100px;
   transform: rotate(90deg)
-}
-
-/* border */
-
-.card::hover {
-    border: 2px solid #FC364C;
 }

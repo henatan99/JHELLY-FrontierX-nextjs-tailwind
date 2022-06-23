@@ -1,11 +1,12 @@
 import utilStyles from '../../styles/utils.module.css';
+import Image from 'next/image';
 
 const Article = () => {
     const links = [
-        {ind: 1, url: '/diagArrowIcon.svg', text: 'Lorem ipsum.com'},
-        {ind: 2, url: '/joyStickIcon.svg', text: '@Lorem ipsum', extra: {url: '/joyStickEye.svg'}},
-        {ind: 3, url: '/instagramIcon.svg', text: '@Lorem ipsum'},
-        {ind: 4, url: '/twitterIcon.svg', text: '@Lorem ipsum', extra: {color: '#FFFFFF'}}
+        {ind: 1, url: '/diagArrowIcon.svg', text: 'Lorem ipsum.com', dim: 'w-[1.36625rem] h-[1.36625rem]'},
+        {ind: 2, url: '/joyStickIcon.svg', text: '@Lorem ipsum', dim: 'w-[1.4625rem] h-[1.1125rem]', extra: {url: '/joyStickEye.svg'}},
+        {ind: 3, url: '/instagramIcon.svg', text: '@Lorem ipsum', dim: 'w-[1.25rem] h-[1.25rem]'},
+        {ind: 4, url: '/twitterIcon.svg', text: '@Lorem ipsum', dim: 'w-[1.25rem] h-[1.0625rem]', extra: {color: '#FFFFFF'}}
     ]
     return (
         <div className="text-[#8E8B8F] w-[87.8%] pb-[2.06rem]">
@@ -19,17 +20,19 @@ const Article = () => {
                 {
                     links.map(link => {
                         return<li key={link.ind} className="flex flex-row h-[1.5rem] mb-[1.25rem]">
-                            <div className="relative w-[1.4625rem]">
-                                <img src={link.url}/>
+                            <div className={`relative w-[1.4625rem] ${link.dim}`}>
+                                <Image src={link.url} layout="fill" />
                                 {
                                     link.extra?.url && 
                                     <>
-                                        <img src={link.extra.url} className="absolute top-[0.48rem] left-[0.365rem] w-[0.24375rem]" />
-                                        <img src={link.extra.url} className="absolute top-[0.48rem] right-[0.365rem] w-[0.24375rem]" />
+                                        <div className="absolute top-[0.48rem] left-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url} layout="fill" /></div>
+                                        <div className="absolute top-[0.48rem] right-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url}  layout="fill" /></div>
                                     </>
                                 }
                             </div>
-                            <p className={`w-[10.25rem] ml-[0.975rem] ${link.extra?.color && `text-[${link.extra.color}]`}`}>{link.text}</p>
+                            <a href='/'>
+                                <p className={`w-[10.25rem] ml-[0.975rem] ${link.extra?.color && `text-[${link.extra.color}]`}`}>{link.text}</p>
+                            </a>
                         </li>
                     })
                 }

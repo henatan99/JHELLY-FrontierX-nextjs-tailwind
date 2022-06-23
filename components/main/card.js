@@ -1,13 +1,17 @@
 import utilStyles from '../../styles/utils.module.css';
-
+import Link from 'next/link';
 const Card = (props) => {
     const { description, title, percent } = props;
     return (
-            <div className={`${utilStyles.font_13_23} text-center hover:border-[#FC364C 1px solid]`}>
-                <p>{description}</p>
-                <h1 className={`${utilStyles.font_16_800}`}>{title}</h1>
-                <p>{percent}</p>
-            </div>
+        <div className={`border-[#FC364C] hover:border-2 active:border-2`}>
+            <Link href="/">
+                <a className={`${utilStyles.font_13_23} text-center`}>
+                    <p>{description}</p>
+                    <h1 className={`${utilStyles.font_16_800}`}>{title}</h1>
+                    <p>{percent}</p>
+                </a>
+            </Link>
+        </div>
     )
 }
 
