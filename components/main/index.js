@@ -12,8 +12,8 @@ const MainSection = () => {
     ]
     return (
         <>  
-            <div className='relative flex flex-column items-center justify-center h-[25rem] mt-[-1.25rem] z-[10]'>
-                <div className={`absolute flex flex-column items-center justify-center min-w-[1750px] h-[25rem] ${utilStyles.subHeaderBg}`}>
+            <div className='relative flex flex-column items-center justify-center h-[15rem] md:h-[25rem] mt-[-1.25rem] z-[10]'>
+                <div className={`absolute flex flex-column items-center justify-center min-w-[1750px] md:h-[25rem] ${utilStyles.subHeaderBg}`}>
                     {/* <img src="/subHeaderMaskImg.svg" className="w-full h-[16.625rem]"/> */}
                 </div>
                 <div className="absolute bottom-[0.8125rem] w-[9.3125rem] h-[9.3125rem]"><Image src="/ellipse.svg" layout="fill"/></div>

@@ -25,19 +25,6 @@
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    animation-name: animate_bg;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-}
-
-@keyframes animate_bg {
-    from {
-      transform: translateX(0);
-    }
-    to { 
-      transform: translateX(-36%);
-    }
 }
 
 
