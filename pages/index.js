@@ -27,7 +27,7 @@ export default function Home() {
       </main>
 
       <footer className='w-full h-[12.81rem] flex items-center justify-center mb-0 mt-auto'>
-        <img src='/logoFooter.svg' className='w-[12.1875rem]'/>
+        <div className='relative w-[12.1875rem] h-[1.4375rem]'><Image src='/logoFooter.svg' layout='fill' alt='logoFooter' /></div>
       </footer>
     </div>
   )

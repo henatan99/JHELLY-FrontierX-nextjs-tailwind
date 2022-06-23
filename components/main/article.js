@@ -21,16 +21,16 @@ const Article = () => {
                     links.map(link => {
                         return<li key={link.ind} className="flex flex-row h-[1.5rem] mb-[1.25rem]">
                             <div className={`relative w-[1.4625rem] ${link.dim}`}>
-                                <Image src={link.url} layout="fill" />
+                                <Image src={link.url} layout="fill" alt={link.url} />
                                 {
                                     link.extra?.url && 
                                     <>
-                                        <div className="absolute top-[0.48rem] left-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url} layout="fill" /></div>
-                                        <div className="absolute top-[0.48rem] right-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url}  layout="fill" /></div>
+                                        <div className="absolute top-[0.48rem] left-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url} layout="fill" alt={link.extra.url} /></div>
+                                        <div className="absolute top-[0.48rem] right-[0.365rem] w-[0.24375rem] h-[0.24375rem]"><Image src={link.extra.url}  layout="fill" alt={link.extra.url} /></div>
                                     </>
                                 }
                             </div>
-                            <a href='/'>
+                            <a href='https://jellydevelopment.com/'>
                                 <p className={`w-[10.25rem] ml-[0.975rem] ${link.extra?.color && `text-[${link.extra.color}]`}`}>{link.text}</p>
                             </a>
                         </li>

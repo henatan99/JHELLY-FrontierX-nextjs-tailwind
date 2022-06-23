@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className={`relative bg-[#0D0D0D] h-[8rem] lg:h-[6rem]`}>
             <div className="p-0 w-[13.54%] h-[1.4375rem] min-w-[6rem] absolute  left-[2.78%] top-[1.75rem] lg:top-[2.375rem] ">
-               <Image src="/logo.svg" layout="fill" /> 
+               <Image src="/logo.svg" layout="fill" alt='logo' /> 
             </div>
             <SearchBar />
             <ul className={`flex flex-row justify-between absolute right-[2.9%] left-[70%] lg:left-[81%] top-[1.75rem] lg:top-[2.375rem] ${utilStyles.psText}`}>
